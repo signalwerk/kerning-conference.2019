@@ -104,11 +104,14 @@
   line-height: .9;
 }
 
+.center {
+  text-align: center;
+}
+
 .calt-no {
   font-feature-settings: "calt" 0;
 
 }
-
 
 .weight--Light {
   font-variation-settings: "wght" 100;
