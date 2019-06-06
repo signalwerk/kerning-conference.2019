@@ -1,0 +1,127 @@
+
+      html {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        font-size: 2.3vw;
+        line-height: 1.4;
+        color: #222;
+      }
+
+      @media screen and (min-width: 955px) {
+        html {
+          font-size: 22px;
+        }
+      }
+
+      ::selection {
+        background: red;
+        text-shadow: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea,
+      p {
+        color: #222;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #444;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+      }
+
+      .container,
+      .header {
+        font-weight: 400;
+        width: 92%;
+        max-width: 38rem;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .container{
+        padding-bottom: 20rem;
+      }
+
+      .example {
+        padding-bottom: 3rem;
+        border-bottom: 2px solid #222;
+      }
+
+@font-face {
+  font-family: "StraightScript";
+  src: url("./StraightScriptGX.ttf");
+}
+
+@keyframes animate-fit {
+  from {
+    font-variation-settings: "wght" 100;
+  }
+  to {
+    font-variation-settings: "wght" 200;
+  }
+}
+
+.anim {
+  animation-name: animate-fit;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.example--font {
+  font-family: "StraightScript";
+  font-variation-settings: "wght" 200;
+  font-size: 13rem;
+  margin-top: 0em;
+  margin-bottom: -.1em;
+  line-height: .9;
+}
+
+.calt-no {
+  font-feature-settings: "calt" 0;
+
+}
+
+
+.weight--Light {
+  font-variation-settings: "wght" 100;
+}
+.weight--Regular {
+  font-variation-settings: "wght" 120;
+}
+.weight--Medium {
+  font-variation-settings: "wght" 144;
+}
+.weight--Semibold {
+  font-variation-settings: "wght" 171;
+}
+.weight--Bold {
+  font-variation-settings: "wght" 200;
+}
