@@ -1,0 +1,27 @@
+@AllLetters = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z e.fina i.fina n.fina o.fina i.init n.init ];
+
+@finaDef = [ o e n i ];
+
+@finaSub = [ o.fina e.fina n.fina i.fina ];
+
+@initDef = [ n i ];
+
+@initSub = [ n.init i.init ];
+
+feature calt {
+# BEGIN POSITIONAL ALTERNATES
+
+lookup InitForms {
+	ignore sub @AllLetters @initDef';
+	sub @initDef' by @initSub;
+} InitForms;
+
+lookup FinaForms {
+	ignore sub @finaDef' @AllLetters;
+	sub @finaDef' by @finaSub;
+} FinaForms;
+
+
+# END POSITIONAL ALTERNATES
+} calt;
+
